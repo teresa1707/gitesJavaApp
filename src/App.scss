@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+::selection {
+    color: #fff;
+    background: #2a2b39;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #2a2b39;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family: "FontAwesome", sans-serif;
+}
+
+body,
+html {
+    font-family: "Raleway", sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+a {
+    color: #2a2b39;
+    text-decoration: none;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    color: #6acd79;
+}
+.menu a {
+    padding: 10px 0;
+    margin: 0 20px;
+    color: #2a2b39;
+    text-shadow: none;
+    position: relative;
+    font-weight: bold;
+}
+.menu a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 10px 0;
+    max-width: 0;
+    border-bottom: 2px solid #6acd79;
+    color: #6acd79;
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+}
+.menu a:hover::before {
+    max-width: 100%;
+}
+
+.intro-page {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 43px -10px black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.intro-page .transformer {
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.intro-page .begin {
+    z-index: 11;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.45);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+.intro-page .begin .top {
+    height: 50%;
+    background: #2a2b39;
+}
+.intro-page .begin .top:after {
+    position: absolute;
+    content: "";
+    pointer-events: none;
+}
+.intro-page .begin .top:after {
+    left: 50%;
+    width: 2em;
+    height: 2em;
+    top: 30em;
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    bottom: 8em;
+    z-index: 10;
+    background: #6acd79;
+    border: 0.5em solid #2a2b39;
+}
+.intro-page .begin .top .logo {
+    display: inline-block;
+    background: #6acd79;
+    color: #fff;
+    z-index: 11;
+    padding: 0.16em;
+    position: relative;
+    pointer-events: none;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 0.4em;
+    font-size: 4em;
+    border: 0.1em solid #fff;
+}
+.intro-page .begin .top .logo .large {
+    font-weight: 800;
+}
+.intro-page .begin .top .logo .small {
+    font-weight: 100;
+}
+.intro-page .begin .title-intro {
+    margin-top: 2.4em;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    z-index: 8;
+}
+.intro-page .begin .title {
+    color: #2a2b39;
+    font-weight: 400;
+    font-size: 3.2em;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0.35em;
+}
+.intro-page .begin .title:after {
+    content: "";
+    position: absolute;
+    top: 1.3em;
+    width: 20%;
+    left: 40%;
+    right: 40%;
+    height: 1px;
+    background: #777777;
+}
+.intro-page .begin .intro {
+    text-align: center;
+    color: #2a2b39;
+    font-family: "Old Standard TT", serif;
+    font-style: italic;
+}
+.intro-page .begin .home {
+    color: #2a2b39;
+    margin-left: 1.7em;
+    font-weight: 300;
+    font-size: 1.5em;
+    -moz-transform: translateY(400%);
+    -ms-transform: translateY(400%);
+    -webkit-transform: translateY(400%);
+    transform: translateY(400%);
+}
+.intro-page .begin .home span {
+    color: #2d3244;
+    font-size: 1.5em;
+    width: 1.9em;
+    display: inline-block;
+}
+.intro-page .begin .home a {
+    position: relative;
+    bottom: 0.24em;
+}
+.intro-page .end {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.tooltip {
+    position: absolute;
+    width: 15%;
+    left: 1em;
+    bottom: 1em;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.4em;
+    background: #2a2b39;
+}
+.tooltip a {
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #fff;
+}
+.tooltip a:hover {
+    color: #49fb35;
+}
+/* HOVER ANIMATIONS */
+.begin .top .logo,
+.begin .top,
+.begin .top:after,
+.begin .title-intro,
+.begin .home {
+    -moz-transition: 0.7s all ease-in-out;
+    -o-transition: 0.7s all ease-in-out;
+    -webkit-transition: 0.7s all ease-in-out;
+    transition: 0.7s all ease-in-out;
+}
+
+.transformer:hover .begin .top .logo {
+    margin-top: 0.28em;
+    font-size: 1.3em;
+    border: 3px solid #fff;
+    margin-left: 0.15em;
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    left: 0;
+}
+
+.transformer:hover .begin .top {
+    height: 30%;
+}
+.transformer:hover .begin .top:after {
+    width: 1.5em;
+    height: 1.5em;
+    top: 20em;
+}
+
+.transformer:hover .begin .title-intro {
+    -moz-transform: translateY(400%);
+    -ms-transform: translateY(400%);
+    -webkit-transform: translateY(400%);
+    transform: translateY(400%);
+}
+
+.transformer:hover .begin .home {
+    -moz-transform: translateY(-52%);
+    -ms-transform: translateY(-52%);
+    -webkit-transform: translateY(-52%);
+    transform: translateY(-52%);
+}
+
+@media only screen and (max-width: 800px) {
+    .menu a {
+        font-size: 80%;
+    }
+    .intro-page .begin .top:after {
+        width: 1em;
+        height: 1em;
+    }
+    .transformer:hover .begin .top:after {
+        width: 1.5em;
+        height: 1.5em;
+        top: 25em;
+    }
+}
